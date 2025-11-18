@@ -69,7 +69,19 @@ class _ResultBodyState extends State<_ResultBody>
       length: 2,
       child: Consumer<MealsController>(
         builder: (context, value, _) {
-          Meal? firstMeal = value.meals?.first;
+          Meal? firstMeal;
+          if (value.meals != null && value.meals!.isNotEmpty) {
+            firstMeal = value.meals!.first;
+          }
+
+          if (value.isLoading) {
+            return Center(child: LoadingCustomWidget());
+          }
+
+          if (value.meals == null || value.meals!.isEmpty) {
+            return Center(child: Text("Tidak ada data makanan ditemukan."));
+          }
+
           return NestedScrollView(
             headerSliverBuilder: (context, innerBoxIsScrolled) => [
               SliverAppBar(

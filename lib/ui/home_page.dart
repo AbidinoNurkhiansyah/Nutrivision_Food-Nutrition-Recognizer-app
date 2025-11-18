@@ -26,6 +26,7 @@ class _HomeBodyState extends State<_HomeBody> {
   Widget build(BuildContext context) {
     final homeController = Provider.of<HomeController>(context, listen: false);
     return Scaffold(
+      backgroundColor: Colors.white,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: Consumer2<HomeController, LiteRtController>(
         builder: (context, home, lite, _) {
@@ -70,11 +71,13 @@ class _HomeBodyState extends State<_HomeBody> {
         },
       ),
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Theme.of(context).colorScheme.primary,
         title: Text(
-          'Food Recognizer App',
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+          'NutriVision',
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
             color: Theme.of(context).colorScheme.onPrimary,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
