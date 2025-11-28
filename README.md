@@ -1,3 +1,3 @@
-# food_recognizer_app
+# Nutrivision - Food Nutrition Recognizer App
 
-A new Flutter project.
+Food Detection Application and Predicts its Nutritional Content.
