@@ -7,9 +7,7 @@ Food Detection Application and Predicts its Nutritional Content.
 ![Flutter](https://img.shields.io/badge/Flutter-3.38-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
----
-
-### 📱 UI
+### 📱 Mobile App UI
 <p float="left">
   <img width="140"  alt="Image" src="https://github.com/user-attachments/assets/dec2bf78-080d-4371-9177-e8d3e1e3fb28" />
   <img width="140"  alt="image" src="https://github.com/user-attachments/assets/27f30ce8-5d46-4c96-8c40-1d82396f808c" />
@@ -20,16 +18,12 @@ Food Detection Application and Predicts its Nutritional Content.
   <img width="140" alt="image" src="https://github.com/user-attachments/assets/2022e73b-628f-43d6-b7ac-b69bf7fa7ba3" />
 </p>
 
----
-
 ### 🚀 Features
 - 📸 Scan food via image or camera
 - 🍽 Fetch food details (name, image, ingredients, instructions)
 - 🔬 Generate nutritional info (calories, protein, fat, carbs, fiber) via Gemini API
 - ✅ Classification results with confidence score
 - 📱 Responsive UI for Android & iOS
-
----
 
 ### 🌐 Tech Stack
 > Built with the tools and technologies:
@@ -43,7 +37,9 @@ Food Detection Application and Predicts its Nutritional Content.
 ![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
 ![YAML](https://img.shields.io/badge/YAML-C62828?style=for-the-badge&logo=yaml&logoColor=white)
 
----
+### 📋 Resource
+- <a href="https://www.kaggle.com/models/google/aiy/tfLite/vision-classifier-food-v1">Model Food Classification</a>
+- <a href="https://www.themealdb.com/api.php#:~:text=in%20the%20URL-,Search%20meal%20by%20name,-www.themealdb.com">Free Recipe API</a>
 
 ### 🛠 Instalasi & Setup
 Jalankan perintah berikut di terminal:
@@ -65,13 +61,11 @@ Jalankan perintah berikut di terminal:
    ```bash
    flutter run
 
----
-
 ## 📁 Project Structure
 
  ```bash
 Nutrivision_Food-Nutrition-Recognizer-app/
-├── assets/               # storage for file
+├── assets/               # storage for food model labels
 ├── lib/                  # Main entry point
 │   ├── controllers/      # state management Provider
 │   ├── env/              # API keys & environment configs
@@ -80,7 +74,7 @@ Nutrivision_Food-Nutrition-Recognizer-app/
 │   ├── ui/               # Pages
 │   ├── utils/            # general assistive devices
 │   └── widgets/          # Component widgets reusable
-└── main.dart             # ma
+└── main.dart             # entry point
 ```
 
 ---
